@@ -160,7 +160,7 @@
                 <a href="./images/Sanjay Updated Resume.... (1).docx" download="" class="btn btn2">Download CV</a>
             </div>
             <div class="contact-right">
-                <form onsubmit="sendemail(); reset(); return false;">
+                <form>
                     <input type="text" id="name" placeholder="Your Name" required>
                     <input type="email" id="email" placeholder="Your Email" required>
                     <input type="text" id="phone" placeholder="your phone no." required>
@@ -175,24 +175,9 @@
     </div>
   </div>
 
-<script src=" https://smtpjs.com/v3/smtp.js"></script>
-<script>
-    function sendemail(){
-        Email.send({
-    SecureToken:"ef6ee8a6-0c8e-4ceb-a318-07d659ede87c",
-    To : 'santhi210773@gmail.com',
-    From : document.getElementById("email").value,
-    Subject : "New contact from enquiry",
-    Body : "Name"+ document.getElementById("name").value
-    + "<br> Email:"+ document.getElementById("email").value
-    + "<br> Phone No:"+ document.getElementById("phone").value
-    + "<br> Message:"+ document.getElementById("message").value
-}).then(
-  message => alert("message sent Succesfully")
-);
-    }
 
-</script>
+
+
   <script>
     var tablinks = document.getElementsByClassName("tab-links")
     var tabcontents = document.getElementsByClassName("tab-contents")
