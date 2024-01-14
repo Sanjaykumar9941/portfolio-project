@@ -11,9 +11,7 @@
     <link rel="alternate" href="sanjayweb-developer-portfolio.netlify.app" hreflang="ta-sg"/>
     <link rel="alternate" href="sanjayweb-developer-portfolio.netlify.app" hreflang="en-lk"/>
     <link rel="alternate" href="sanjayweb-developer-portfolio.netlify.app" hreflang="en-in"/>
-=======
 
->>>>>>> f6e552f87c7fe57b7e30e08f36c504278f571e4a
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/413486b166.js" crossorigin="anonymous"></script>
 </head>
@@ -160,11 +158,11 @@
                 <a href="./images/Sanjay Updated Resume.... (1).docx" download="" class="btn btn2">Download CV</a>
             </div>
             <div class="contact-right">
-                <form>
-                    <input type="text" id="name" placeholder="Your Name" required>
-                    <input type="email" id="email" placeholder="Your Email" required>
-                    <input type="text" id="phone" placeholder="your phone no." required>
-                    <textarea type="Message" id="Message" rows="6" placeholder="how can we help you?"></textarea>
+                <form method="post" action="mail.php">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <input type="text" name="mobile" placeholder="your mobile no." required>
+                    <textarea type="message" name="message" rows="6" placeholder="how can we help you?"></textarea>
                     <button type="submit" class="btn btn2">Submit</button>
                 </form>
             </div>
